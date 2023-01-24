@@ -37,7 +37,7 @@ public class AuditController {
     }
 
 
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<AuditDTO> doPost(@Valid @RequestBody AuditDTO dto) {
 
         AuditDTO created = this.service.create(dto);
